@@ -1,0 +1,36 @@
+id,name,client_id,owner_id,phase,priority,start_date,deadline
+P002,Website-Relaunch,K002,M001,kickoff,hoch,2026-11-11,2027-01-15
+P003,Google-Ads-Kampagne,K003,M002,strategie,normal,2026-11-01,2027-01-05
+P004,Recruiting-Kampagne,K004,M003,qc,normal,2026-10-22,2026-12-26
+P005,Imagefilm,K005,M004,praesentation,normal,2026-10-12,2026-12-16
+P006,Newsletter-Automation,K007,M005,kundenfeedback,normal,2026-10-02,2026-12-06
+P007,Social-Media-Kampagne,K008,M006,onboarding,normal,2026-11-20,2027-01-24
+P008,Corporate Design,K009,M001,betreuung,hoch,2026-09-17,2026-11-16
+P009,Website-Relaunch,K010,M002,kickoff,niedrig,2026-11-09,2027-01-13
+P010,Google-Ads-Kampagne,K011,M003,strategie,normal,2026-10-30,2027-01-03
+P011,Recruiting-Kampagne,K012,M004,qc,normal,2026-10-20,2026-12-24
+P012,Imagefilm,K014,M005,praesentation,normal,2026-10-15,2026-12-19
+P013,Newsletter-Automation,K015,M006,onboarding,normal,2026-11-19,2027-01-23
+P014,Social-Media-Kampagne,K016,M001,golive,hoch,2026-09-25,2026-11-29
+P015,Corporate Design,K017,M002,betreuung,normal,2026-09-15,2026-11-14
+P016,Website-Relaunch,K018,M003,kickoff,niedrig,2026-11-07,2027-01-11
+P017,Google-Ads-Kampagne,K019,M004,strategie,normal,2026-11-02,2027-01-06
+P018,Recruiting-Kampagne,K021,M005,qc,normal,2026-10-23,2026-12-27
+P019,Imagefilm,K022,M006,praesentation,normal,2026-10-13,2026-12-17
+P020,Newsletter-Automation,K023,M001,kundenfeedback,hoch,2026-10-03,2026-12-07
+P021,Social-Media-Kampagne,K024,M002,onboarding,normal,2026-11-16,2027-01-20
+P022,Corporate Design,K025,M003,betreuung,normal,2026-09-18,2026-11-17
+P023,Website-Relaunch,K026,M004,kickoff,niedrig,2026-11-10,2027-01-14
+P024,Google-Ads-Kampagne,K028,M005,strategie,normal,2026-10-31,2027-01-04
+P025,Recruiting-Kampagne,K029,M006,qc,normal,2026-10-21,2026-12-25
+P026,Recruiting-Kampagne,K002,M001,kickoff,hoch,2026-11-11,2027-01-15
+P027,Imagefilm,K004,M002,praesentation,normal,2026-10-14,2026-12-18
+P028,Newsletter-Automation,K007,M003,betreuung,normal,2026-09-16,2026-11-15
+P029,Social-Media-Kampagne,K010,M004,qc,normal,2026-10-21,2026-12-25
+P030,Corporate Design,K012,M005,golive,normal,2026-09-23,2026-11-27
+P031,Website-Relaunch,K016,M006,strategie,niedrig,2026-11-02,2027-01-06
+P032,Google-Ads-Kampagne,K018,M001,kundenfeedback,hoch,2026-10-05,2026-12-09
+P033,Recruiting-Kampagne,K021,M002,kickoff,normal,2026-11-09,2027-01-13
+P034,Imagefilm,K023,M003,praesentation,normal,2026-10-12,2026-12-16
+P035,Newsletter-Automation,K026,M004,betreuung,normal,2026-09-14,2026-11-13
+P036,Social-Media-Kampagne,K029,M005,qc,normal,2026-10-24,2026-12-28

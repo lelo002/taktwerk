@@ -1,0 +1,62 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // HIER ANPASSEN: Wer darf in die App?
+    function email() { return request.auth.token.email.lower(); }
+    function isTeam() {
+      return request.auth != null && request.auth.token.email_verified == true && email() in [
+        // Gmail-Adressen des Teams, kleingeschrieben, mit Komma getrennt:
+        'person1@gmail.com',
+        'person2@gmail.com'
+      ];
+      // Später mit eigener Domain stattdessen: email().matches('.+@deine-agentur[.]de')
+    }
+
+    match /{col}/{id} {
+      allow read, write: if isTeam() && col in ['users', 'clients', 'projects', 'tasks', 'offers', 'settings'];
+    }
+    // Berichte liest das ganze Team, schreibt nur die Person selbst
+    match /reports/{id} {
+      allow read: if isTeam();
+      allow create: if isTeam() && request.resource.data.userId == email();
+      allow update: if isTeam() && resource.data.userId == email() && request.resource.data.userId == email();
+    }
+    match /activity/{id} {
+      allow read: if isTeam();
+      allow create: if isTeam() && request.resource.data.userId == email();
+    }
+    // Kundenlink zum Angebot: nur mit dem geheimen Link lesbar, Inhalt nach dem Versand unveränderlich.
+    // Niemand, auch nicht das Team, kann eine Unterschrift nachträglich ändern oder löschen.
+    match /publicOffers/{token} {
+      function old() { return resource.data; }
+      function neu() { return request.resource.data; }
+      function only(keys) { return neu().diff(old()).affectedKeys().hasOnly(keys); }
+      function open() { return old().status == 'offen' && request.time.toMillis() <= old().validTs; }
+
+      allow get: if true;
+      allow list: if isTeam();
+      allow create: if isTeam() && neu().status == 'offen' && neu().keys().hasOnly(['id', 'offerId', 'status', 'docJson', 'hash', 'validTs', 'createdAt']);
+      // Team: nur zurückziehen
+      allow update: if isTeam() && old().status == 'offen' && neu().status == 'zurückgezogen' && only(['status']);
+      // Kunde: einmal „angesehen“ vermerken
+      allow update: if !('viewedAt' in old()) && only(['viewedAt']) && neu().viewedAt == request.time;
+      // Kunde: unterschreiben
+      allow update: if open() && neu().status == 'unterschrieben' && only(['status', 'sign'])
+        && neu().sign.keys().hasOnly(['name', 'email', 'image', 'hash', 'ua', 'consent', 'at'])
+        && neu().sign.at == request.time && neu().sign.hash == old().hash && neu().sign.consent == true
+        && neu().sign.name is string && neu().sign.name.size() > 1 && neu().sign.name.size() <= 120
+        && neu().sign.email is string && neu().sign.email.size() > 3 && neu().sign.email.size() <= 200
+        && neu().sign.ua is string && neu().sign.ua.size() <= 400
+        && neu().sign.image is string && neu().sign.image.size() < 250000 && neu().sign.image.matches('^data:image/png;base64,.*');
+      // Kunde: ablehnen
+      allow update: if open() && neu().status == 'abgelehnt' && only(['status', 'decline'])
+        && neu().decline.keys().hasOnly(['at', 'reason']) && neu().decline.at == request.time
+        && neu().decline.reason is string && neu().decline.reason.size() <= 1000;
+    }
+    // Dashboard und Notizen sind privat
+    match /prefs/{id} {
+      allow read, write: if isTeam() && id == email();
+    }
+  }
+}

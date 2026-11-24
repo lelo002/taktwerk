@@ -1,0 +1,30 @@
+id,name,industry,contact_name,contact_email,status,phone,street,zip,city,country
+K002,Praxis Dr. Feld,Gesundheit,Paul Feld,info@praxis-dr-feld.example.com,Aktiv,+49 40 0000102,Musterstraße 2,50667,Köln,Deutschland
+K003,Holzwerk Süd,Handwerk,Tom Maier,info@holzwerk-sued.example.com,Aktiv,+49 40 0000103,Musterstraße 3,80331,München,Deutschland
+K004,Velo & Co.,E-Commerce,Aylin Demir,info@velo-co.example.com,Aktiv,+49 40 0000104,Musterstraße 4,04109,Leipzig,Deutschland
+K005,Backstube Morgentau,Food & Beverage,Rita Lohse,info@backstube-morgentau.example.com,Aktiv,+49 40 0000105,Musterstraße 5,28195,Bremen,Deutschland
+K006,Kanzlei Silberbach,Recht,Jens Silber,info@kanzlei-silberbach.example.com,Nicht mehr aktiv,+49 40 0000106,Musterstraße 6,01067,Dresden,Deutschland
+K007,Yogaraum Lindgrün,Sport,Mara Lind,info@yogaraum-lindgruen.example.com,Aktiv,+49 40 0000107,Musterstraße 7,20095,Hamburg,Deutschland
+K008,Möbelhaus Fichtental,Handel,Kurt Amsel,info@moebelhaus-fichtental.example.com,Onboarding,+49 40 0000108,Musterstraße 8,50667,Köln,Deutschland
+K009,Solarwerk Hellfeld,Energie,Nils Horn,info@solarwerk-hellfeld.example.com,Aktiv,+49 40 0000109,Musterstraße 9,80331,München,Deutschland
+K010,Gartenbau Quellgrund,Handwerk,Eva Quast,info@gartenbau-quellgrund.example.com,Aktiv,+49 40 0000110,Musterstraße 10,04109,Leipzig,Deutschland
+K011,Hotel Seewinkel,Tourismus,Lotte Bohn,info@hotel-seewinkel.example.com,Aktiv,+49 40 0000111,Musterstraße 11,28195,Bremen,Deutschland
+K012,Optik Klarblick Nord,Handel,Samir Aziz,info@optik-klarblick-nord.example.com,Aktiv,+49 40 0000112,Musterstraße 12,01067,Dresden,Deutschland
+K013,Zahnzentrum Eichhain,Gesundheit,Hanna Roth,info@zahnzentrum-eichhain.example.com,Nicht mehr aktiv,+49 40 0000113,Musterstraße 13,20095,Hamburg,Deutschland
+K014,Reisebüro Fernkurs,Tourismus,Pia Stark,info@reisebuero-fernkurs.example.com,Aktiv,+49 40 0000114,Musterstraße 14,50667,Köln,Deutschland
+K015,Fahrschule Kurvenreich,Bildung,Ole Brand,info@fahrschule-kurvenreich.example.com,Onboarding,+49 40 0000115,Musterstraße 15,80331,München,Deutschland
+K016,Brauhaus Hopfenried,Food & Beverage,Max Riede,info@brauhaus-hopfenried.example.com,Aktiv,+49 40 0000116,Musterstraße 16,04109,Leipzig,Deutschland
+K017,Modeatelier Fadenlauf,Mode,Clara Voss,info@modeatelier-fadenlauf.example.com,Aktiv,+49 40 0000117,Musterstraße 17,28195,Bremen,Deutschland
+K018,Immobilien Turmblick,Immobilien,Udo Kern,info@immobilien-turmblick.example.com,Aktiv,+49 40 0000118,Musterstraße 18,01067,Dresden,Deutschland
+K019,Musikschule Taktvoll,Bildung,Lea Noll,info@musikschule-taktvoll.example.com,Aktiv,+49 40 0000119,Musterstraße 19,20095,Hamburg,Deutschland
+K020,Druckerei Farbenfroh,Industrie,Gerd Lauer,info@druckerei-farbenfroh.example.com,Nicht mehr aktiv,+49 40 0000120,Musterstraße 20,50667,Köln,Deutschland
+K021,Spedition Weitweg,Logistik,Anke Ruhl,info@spedition-weitweg.example.com,Aktiv,+49 40 0000121,Musterstraße 21,80331,München,Deutschland
+K022,Feinkost Olivenhain,Handel,Marco Testa,info@feinkost-olivenhain.example.com,Aktiv,+49 40 0000122,Musterstraße 22,04109,Leipzig,Deutschland
+K023,Architektur Raumwerk Ost,Architektur,Nora Bick,info@architektur-raumwerk-ost.example.com,Aktiv,+49 40 0000123,Musterstraße 23,28195,Bremen,Deutschland
+K024,Fitness Kraftinsel,Sport,Deniz Kaya,info@fitness-kraftinsel.example.com,Onboarding,+49 40 0000124,Musterstraße 24,01067,Dresden,Deutschland
+K025,Buchhandlung Seitenwind,Handel,Ida Moll,info@buchhandlung-seitenwind.example.com,Aktiv,+49 40 0000125,Musterstraße 25,20095,Hamburg,Deutschland
+K026,Elektro Funkenflug,Handwerk,Rolf Engel,info@elektro-funkenflug.example.com,Aktiv,+49 40 0000126,Musterstraße 26,50667,Köln,Deutschland
+K027,Naturkosmetik Kräuterkind,E-Commerce,Jule Hauck,info@naturkosmetik-kraeuterkind.example.com,Nicht mehr aktiv,+49 40 0000127,Musterstraße 27,80331,München,Deutschland
+K028,Tierarztpraxis Wiesengrund,Gesundheit,Finn Maas,info@tierarztpraxis-wiesengrund.example.com,Aktiv,+49 40 0000128,Musterstraße 28,04109,Leipzig,Deutschland
+K029,Weinhandel Ahornhof,Handel,Anja Albers,info@weinhandel-ahornhof.example.com,Aktiv,+49 40 0000129,Musterstraße 29,28195,Bremen,Deutschland
+K030,Velo und Co,E-Commerce,Aylin Demir,info@velo-co.example.com,Aktiv,,Musterstraße 4,04109,Leipzig,Deutschland

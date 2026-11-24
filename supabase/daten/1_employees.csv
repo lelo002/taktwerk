@@ -1,0 +1,6 @@
+id,name,role,email,phone,street,zip,city,country
+M002,Mika Brandt,Design,mika@example.com,+49 30 0000002,Musterallee 10,10115,Berlin,Deutschland
+M003,Sofia Keller,Performance Marketing,sofia@example.com,+49 30 0000003,Musterallee 10,10115,Berlin,Deutschland
+M004,Jonas Adler,Content & Social,jonas@example.com,+49 30 0000004,Musterallee 10,10115,Berlin,Deutschland
+M005,Tarek Nassar,Video,tarek@example.com,+49 30 0000005,Musterallee 10,10115,Berlin,Deutschland
+M006,Hanna Vogel,Strategie,hanna@example.com,+49 30 0000006,Musterallee 10,10115,Berlin,Deutschland
