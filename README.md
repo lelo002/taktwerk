@@ -2,7 +2,7 @@
 
 Internes Tool für eine (fiktive) Marketingagentur: Kunden, Projekte, Aufgaben, Tagesberichte und Angebote an einem Ort. Persönliches Demo-Projekt, **mit KI-Unterstützung entwickelt**. Alle Personen und Firmen sind ausgedacht.
 
-**[Live-Demo](LINK-EINTRAGEN)** (ohne Login, Daten bleiben im eigenen Browser)
+**[Live-Demo](https://lelo002.github.io/taktwerk/)** (ohne Login, Daten bleiben im eigenen Browser)
 
 ![Projektübersicht](docs/projekte.png)
 
